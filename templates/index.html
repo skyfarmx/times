@@ -1,0 +1,347 @@
+{% extends 'header.html' %}
+{% block body %}
+      {% load static %}
+   
+            <!-- !Header -->
+            
+           
+            <!-- !Desktop Navigation -->
+           
+            
+            <div class="mow_fn_content">
+                <div class="mow_fn_noblog_content">
+                    <div data-elementor-type="wp-page" data-elementor-id="325" class="elementor elementor-325">
+                       
+                        
+                <div class="elementor-element elementor-element-df2a3da e-con-full container e-flex e-con e-parent" data-id="df2a3da" data-element_type="container">
+                                            <div class="elementor-element elementor-element-eabba15 elementor-widget elementor-widget-frel-divider" data-id="eabba15" data-element_type="widget" data-widget_type="frel-divider.default">
+                                                <div class="elementor-widget-container">
+                                                    <div class="fn_cs_divider">
+                                                        <div class="fn_cs_divider_in"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                        <div class="elementor-element elementor-element-0903543 e-con-full container e-flex e-con e-parent" data-id="0903543" data-element_type="container">
+                            <div class="elementor-element elementor-element-c359e41 elementor-widget elementor-widget-frel-title" data-id="c359e41" data-element_type="widget" data-widget_type="frel-title.default">
+                                <div class="elementor-widget-container">
+                                    <div class="fn__cs_title_wrapper">
+                                        <h3 class="fn__lined_title" data-color="">
+                                            <span>Günün Əsas Xəbərləri</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="elementor-element elementor-element-0091170 e-con-full container e-flex e-con e-parent" data-id="0091170" data-element_type="container">
+                            <div class="elementor-element elementor-element-a4b12db e-con-full e-flex e-con e-child" data-id="a4b12db" data-element_type="container">
+                                <div class="elementor-element elementor-element-2d1a391 elementor-widget elementor-widget-frel-posts" data-id="2d1a391" data-element_type="widget" data-widget_type="frel-posts.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                            <div class="fn__widget_posts_delta_wrapper">
+                                                <div class="fn__widget_posts_delta" data-layout="inline_max" data-spacing="" data-color="" data-title-size="l" data-cols="auto" data-inline-cols="col_1" data-inline-border="disabled" data-row-border="disabled" data-imax-image="right" data-imax-text="left" data-imax-vtext="top">
+                                                    <div class="fn__widget_filter_content">
+                                                        <ul class="first_item delta_items active">
+                                                            <li class="delta_item">
+                                                                <div class="delta__item">
+                                                                    <div class="img_holder">
+                                                                        <div class="item_img">
+                                                                            <a href="{% url 'slug' category_name=latest_content.category.category_slug  slug_name=latest_content.slug %}" aria-label="{{latest_content.title|safe}}">
+                                                                                <img loading="lazy" decoding="async" width="1024" height="682" src="{% static latest_content.picture  %}" class="attachment-large size-large wp-post-image" alt="{{latest_content.title|safe}}" loading="lazy" />
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="title_holder">
+                                                                        <div class="fn__meta">
+                                                                            <p>
+                                                                                <a class=" fn_last_category" href="{% url 'slug' category_name=latest_content.category.category_slug  slug_name=latest_content.slug %}"> {{latest_content.category}}</a>
+                                                                                <span class="meta_sep"></span>
+                                                                                <span class="meta_item meta_date" title="{{latest_content.publish}}">
+                                                                                   {{latest_content.publish}}<span class="meta_sep"></span>
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <h3 class="post_title">
+                                                                            <a href="{% url 'slug' category_name=latest_content.category.category_slug  slug_name=latest_content.slug %}" aria-label="{{latest_content.title|safe}}">{{latest_content.title|safe}}  </a>
+                                                                        </h3>
+                                                                        <p class="fn__descr"> {{latest_content.body|safe|truncatechars:100}} </p>
+                                                                        <div class="fn__read_more">
+                                                                            <a href="{% url 'slug' category_name=latest_content.category.category_slug  slug_name=latest_content.slug %}" aria-label="{{latest_content.title|safe}}">
+                                                                                <span class="text" aria-label="Read More">Ətraflı Oxu</span>
+                                                                                <span class="icon">
+                                                                                    <i class="fn__isvg fn__isvg-svg__arrow_3 "></i>
+                                                                                </span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="elementor-element elementor-element elementor-widget elementor-widget-frel-posts" data-id="fd1060e" data-element_type="widget" data-widget_type="frel-posts.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                            <div class="fn__widget_posts_zeta" data-layout="column" data-title-size="m" data-marker="">
+                                                <div class="fn__widget_filter_content">
+                                                    <ul class="first_item zeta_items active">
+                                                        
+                                                        {% if latest_content7 != None %}
+                                        {% for lasts in latest_content7|slice:":9" %}
+                                                        <li class="zeta_item">
+                                                            <div class="zeta__item">
+                                                                <div class="title_holder">
+                                                                    <div class="fn__meta">
+                                                                        <p>
+                                                                            <a class=" fn_last_category" href="{% url 'slug' category_name=lasts.category.category_slug  slug_name=lasts.slug %} ">{{lasts.category}}</a>
+                                                                            <span class="meta_sep"></span>
+                                                                            <span class="meta_item meta_date" title="{{lasts.publish}}">
+                                                                                {{lasts.publish}} <span class="meta_sep"></span>
+                                                                            </span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="zeta_title">
+                                                                        <h3 class="post_title">
+                                                                            <a href="{% url 'slug' category_name=lasts.category.category_slug  slug_name=lasts.slug %}" aria-label="{{lasts.title|safe}}">{{lasts.title|safe}}</a>
+                                                                        </h3>
+                                                                        <p class="fn__descr">{{lasts.body|safe}}</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                       
+                                                            {% endfor %}
+                                    {% else %}
+                                   
+                                    
+                                   
+                                    {% endif %}
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="elementor-element elementor-element-b6cb05f e-con-full mow-border-1-left mow-border-left-border-color hide-on-tablet e-flex e-con e-child" data-id="b6cb05f" data-element_type="container">
+                                <div class="elementor-element elementor-element-ee486e7 elementor-widget elementor-widget-frel-posts" data-id="ee486e7" data-element_type="widget" data-widget_type="frel-posts.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                            <div class="fn__widget_posts_alpha" data-title-size="m" data-color="" data-layout="classic" data-border="enabled" data-img-pos="right" data-text-pos="against_img">
+                                                <div class="fn__widget_filter_content">
+                                                    <ul class="first_item alpha_items active">
+
+                                                             {% if contents != None %}
+                                        {% for content in contents %}
+                                                        <li class="alpha_item">
+                                                            <div class="alpha__item">
+                                                                <div class="img_holder">
+                                                                    <div class="item_img">
+                                                                        <a href="{% url 'slug' category_name=content.category.category_slug  slug_name=content.slug %}" aria-label="{{content.title|safe}}">
+                                                                            <img loading="lazy" decoding="async" width="150" height="150" src="{% static  content.picture %}" class="attachment-thumbnail size-thumbnail wp-post-image" alt="{{content.title|safe}}" loading="lazy" />
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="title_holder">
+                                                                    <div class="fn__meta">
+                                                                        <p>
+                                                                            <a class=" fn_last_category" href= "{% url 'slug' category_name=content.category.category_slug  slug_name=content.slug %}" >{{content.category.category_slug}}</a>
+                                                                            <span class="meta_sep"></span>
+                                                                            <span class="meta_item meta_date" title="{{content.publish}}">
+                                                                                {{content.publish}}<span class="meta_sep"></span>
+                                                                            </span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <h3 class="post_title">
+                                                                        <a href="{% url 'slug' category_name=latest_content.category.category_slug  slug_name=latest_content.slug %}">{{content.title|safe}}</a>
+                                                                    </h3>
+                                                                    <p class="fn__descr">{{content.body|safe}}</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        
+                                                              {% endfor %}
+                                    {% else %}
+                                   
+                                    
+                                   
+                                    {% endif %}
+                                                        
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                   
+
+
+
+
+
+
+
+
+<div class="elementor-element elementor-element-1b0c4cf e-con-full container e-flex e-con e-parent e-lazyloaded" data-id="1b0c4cf" data-element_type="container">
+				<div class="elementor-element elementor-element-5496a9c elementor-widget elementor-widget-frel-divider" data-id="5496a9c" data-element_type="widget" data-widget_type="frel-divider.default">
+				<div class="elementor-widget-container">
+					<div class="fn_cs_divider"><div class="fn_cs_divider_in"></div></div>				</div>
+				</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      
+                        <div class="elementor-element elementor-element-b9fccb8 e-con-full container e-flex e-con e-parent e-lazyloaded" data-id="b9fccb8" data-element_type="container">
+                            <div class="elementor-element elementor-element-a1a7323 elementor-widget elementor-widget-frel-title" data-id="a1a7323" data-element_type="widget" data-widget_type="frel-title.default">
+                                <div class="elementor-widget-container">
+                                    <div class="fn__cs_title_wrapper">
+                                        <h3 class="fn__lined_title" data-color="">
+                                            <span>Son Xəbərlər</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-df32e22 elementor-widget elementor-widget-frel-posts" data-id="df32e22" data-element_type="widget" data-widget_type="frel-posts.default">
+                                <div class="elementor-widget-container">
+                                    <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                        <div class="fn__widget_posts_delta_wrapper">
+                                            <div class="fn__widget_posts_delta" data-layout="column" data-spacing="" data-color="" data-title-size="m" data-cols="col_3" data-inline-cols="col_1" data-inline-border="disabled" data-row-border="disabled" data-imax-image="left" data-imax-text="left" data-imax-vtext="top">
+                                                <div class="fn__widget_filter_content">
+                                                    <ul class="first_item delta_items active">
+
+                                                         {% if latest_content7 != None %}
+                                        {% for content in latest_content7|slice:":9" %}
+                                                        <li class="delta_item">
+                                                            <div class="delta__item">
+                                                                <div class="img_holder">
+                                                                    <div class="item_img">
+                                                                        <a href="{% url 'slug' category_name=content.category.category_slug  slug_name=content.slug %}" aria-label="{{content.title|safe}}">
+                                                                            <img loading="lazy" decoding="async" width="1024" height="683" src="{% static  content.picture %}" class="attachment-large size-large wp-post-image" alt="" loading="lazy" />
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="title_holder">
+                                                                    <div class="fn__meta">
+                                                                        <p>
+                                                                            <a class=" fn_last_category" href="{% url 'slug' category_name=content.category.category_slug  slug_name=content.slug %}">{{content.category.category_slug}}</a>
+                                                                            <span class="meta_sep"></span>
+                                                                            <span class="meta_item meta_date" title="{{content.publish}}">
+                                                                                {{content.publish}}<span class="meta_sep"></span>
+                                                                            </span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <h3 class="post_title">
+                                                                        <a href="{% url 'slug' category_name=content.category.category_slug  slug_name=content.slug %}" aria-label="{{content.title|safe}}">{{content.title|safe}}</a>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                                                  {% endfor %}
+                                    {% else %}
+                                   
+                                    
+                                   
+                                    {% endif %}
+                                                                                                                      
+                                                    </ul>
+                                                   
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Close Page footer-- >
+              {% include 'footer.html' %}
+        </div>
+
+
+      
+        <!-- Searchbox -->
+ {% include 'searchbox.html' %}
+        <!-- !Searchbox -->
+
+
+
+        {% include 'left_menu.html' %}
+
+
+      
+       <!-- / Content -->
+
+{% endblock %}
+
+

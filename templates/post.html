@@ -1,0 +1,293 @@
+{% extends 'header.html' %}
+{% block body %}
+      {% load static %}
+   
+            <!-- !Header -->
+            
+            <!-- !Desktop Navigation -->
+             
+
+
+
+            <div class="mow_fn_content">
+                <div class="mow_fn_singlepost">
+                    <div class="mow_fn_singleajax">
+                        <div class="mow_fn_blog_single" data-post-id="112" data-get-post-id="110" data-post-title="Top Tips to Stay Motivated and Avoid Burnout While Working Remotely" data-post-url="https://frenify.com/work/envato/frenify/wp/mow/news/what-marriage-means-to-me/" data-layout="standard" data-style="wsr">
+                            <div class="mow_fn_single">
+                                <div class="mow_fn_ws" data-side="wsr">
+                                    <div class="container">
+                                        <div class="wspage_cols">
+                                            <div class="wspage_col wspage_list">
+                                                <div class="wspage_in">
+                                                    <div class="fn__single_top_info">
+                                                        <div class="mow_fn_breadcrumbs">
+                                                            <div class="container">
+                                                                <div class="breadcrumbs_wrap">
+                                                                    <ul id="breadcrumbs" class="breadcrumbs">
+                                                                        <li class="item-home">
+                                                                            <a class="bread-link bread-home" href="{% url 'polls:home'  %}" title="Ana Səhifə">Ana Səhifə</a>
+                                                                        </li>
+                                                                        <li class="separator separator-home">
+                                                                            <span></span>
+                                                                        </li>
+                                                                        <li class="item-cat">
+                                                                            <a href="{% url 'categories' category_name=article.category.category_slug %}">{{article.category}}</a>
+                                                                        </li>
+                                                                        <li class="separator">
+                                                                            <span></span>
+                                                                        </li>
+                                                                        <li class="item-current item-112">
+                                                                            <span class="bread-current bread-112" title="{{article.title|safe}}">{{article.title|safe}}</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h1 class="fn__maintitle fn__single_post_title">{{article.title|safe}}</h1>
+                                                        <div class="fn__meta">
+                                                            <p>
+                                                                <span class="meta_item meta_author">
+                                                                    
+                                                                        <img loading="lazy" src="{% static 'images/admin.jpg'  %}" alt="{{request.user}}">
+                                                                        <span class="text">{{request.user}}</span>
+                                                                    </a>
+                                                                    <span class="meta_sep"></span>
+                                                                </span>
+                                                                
+                                                               
+                                                                
+                                                                <span class="meta_item meta_date" title="{{article.publish}}">
+                                                                    {{article.publish}}<span class="meta_sep"></span>
+                                                                </span>
+                                                                <span class="meta_item post_views" title="13536">
+                                                                    13K Views<span class="meta_sep"></span>
+                                                                </span>
+                                                               
+                                                            </p>
+                                                        </div>
+                                                        <div class="mow_fn_share">
+                                                            <div class="share_wrapper">
+                                                                <h5 class="label">
+                                                                    <span>Share</span>
+                                                                </h5>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="" target="_blank" title="Facebook" aria-label="Share on Facebook">
+                                                                            <i class="fn__isvg fn__isvg-facebook "></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="" target="_blank" rel="noopener noreferrer" title="Share on X Network" aria-label="Share on X Network">
+                                                                            <i class="fn__isvg fn__isvg-twitter "></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="" target="_blank" title="Pinterest" aria-label="Share on Pinterest">
+                                                                            <i class="fn__isvg fn__isvg-pinterest "></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="" target="_blank" title="VKontakte" aria-label="Share on VKontakte">
+                                                                            <i class="fn__isvg fn__isvg-vk "></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a title="Copy Link" class="frenify__copy_link" href="" aria-label="Copy a link to the clipboard">
+                                                                            <i class="fn__isvg fn__isvg-svg__link "></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fn__single_image_wrap fn__lg_lightbox">
+                                                            <div class="fn__single_image lightbox" data-src="{% static article.picture  %}" data-sub-html="A chef carefully plating a dish with colorful ingredients.">
+                                                                <img loading="lazy" width="1280" height="717" src="{% static article.picture  %}" class="attachment-full size-full wp-post-image" alt="{{article.title|safe}}" loading="lazy" decoding="async" />
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                    <div class="fn__single_content">
+                                                        <div class="post__excerpt">
+                                                            <p>{{article.title|safe}} </p>
+                                                        </div>
+                                                       <p>{{article.body|safe}} </p>
+                                                        
+                                                        
+                                                    </div>
+                                                    <div class="clearfix"></div>
+
+
+
+                                                    
+
+
+                                                
+                                                    
+
+
+                                                </div>
+                                            </div>
+                                            <div class="wspage_col wspage_bar">
+                                                <div class="wspage_in">
+                                                    <div class="mow_fn_sidebar">
+                                                       
+
+
+                                                        
+                                                        
+                                                        <div id="mow_followers-2" class="widget_block clear widget_mow_followers">
+                                                            <div>
+                                                                <div class="wid-title">
+                                                                    <span class="text">
+                                                                        <span>Join Us</span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="mow_fn_widget_followers">
+                                                                    <ul>
+                                                                        <li class="fn__icon-facebook">
+                                                                            <div class="item">
+                                                                                <a href="#" aria-label="/"></a>
+                                                                                <span class="subtitle">Facebook</span>
+                                                                                <span class="count">38.5K</span>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="fn__icon-twitter">
+                                                                            <div class="item">
+                                                                                <a href="#" aria-label="/"></a>
+                                                                                <span class="subtitle">X Network</span>
+                                                                                <span class="count">32.1K</span>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="fn__icon-behance">
+                                                                            <div class="item">
+                                                                                <a href="#" aria-label="/"></a>
+                                                                                <span class="subtitle">Behance</span>
+                                                                                <span class="count">56.2K</span>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="fn__icon-instagram">
+                                                                            <div class="item">
+                                                                                <a href="#" aria-label="/"></a>
+                                                                                <span class="subtitle">Instagram</span>
+                                                                                <span class="count">18.9K</span>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        
+                                                        <div id="mow_top_articles-4" class="widget_block clear widget_mow_top_articles">
+                                                            <div>
+                                                                <div class="fn__widget_posts_alpha">
+                                                                    <div class="wid-title">
+                                                                        <span class="text">
+                                                                            <span>Günün İcmalı</span>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="fn__widget_filter_content">
+                                                                        <ul class="first_item alpha_items active">
+
+                                                                                    {% if random_sevenday != None %}
+                                                                                     {% for content in random_sevenday %}
+
+
+                                                                            <li class="alpha_item">
+                                                                                <div class="alpha__item">
+                                                                                    <div class="img_holder">
+                                                                                        <div class="item_img">
+                                                                                       <a href="{% url 'slug' category_name=content.category.category_slug  slug_name=content.slug %}" aria-label="{{content.title|safe}}">
+                                                                                        <img loading="lazy" decoding="async" src="{% static  content.picture %}" alt="{{content.title|safe}}">
+                                                                                    </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                    <div class="title_holder">
+                                                                                        <div class="fn__meta">
+                                                                                            <p>
+                                                                                                <a class=" fn_last_category" href="{% url 'categories' category_name=content.category.category_slug  %}">{{content.category.category_slug}}</a>
+                                                                                                <span class="meta_sep"></span>
+                                                                                                <span class="meta_item meta_date" title="{{content.publish}}">
+                                                                                                   {{content.publish}}<span class="meta_sep"></span>
+                                                                                                </span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <h3 class="post_title">
+                                                                                            <a href="{% url 'slug' category_name=content.category.category_slug  slug_name=content.slug %}" aria-label="{{content.title|safe}}">{{content.title|safe}}</a>
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                           
+                                                                                                        {% endfor %}
+                                    {% else %}
+                                   
+                                    
+                                   
+                                    {% endif %}
+                                                                           
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        
+                                                        
+                                                        
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                
+            </div>
+        </div>
+        <!-- Close Page -->
+        <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+           {% include 'footer.html' %}
+        </div>
+
+
+      
+        <!-- Searchbox -->
+ {% include 'searchbox.html' %}
+        <!-- !Searchbox -->
+
+
+
+        {% include 'left_menu.html' %}
+
+
+      
+       <!-- / Content -->
+
+{% endblock %}
+
+

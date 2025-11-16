@@ -1,0 +1,46 @@
+{% load static %}
+
+ <div class="header_nav_wrap">
+                        <div class="header_nav">
+                            <div class="menu-main-menu-container">
+                                <ul id="menu-main-menu" class="mow_fn_main_nav">
+                                   
+                                    
+
+
+
+
+
+
+
+                                        {% if category != None %}
+                                        {% for cat in category %}
+
+                                    <li id="menu-item-1236" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1236">
+                                        <a href={% url 'categories' category_name=cat.category_slug %}>
+                                            <span>
+                                                {{ cat }}  <i class="fn__isvg fn__isvg-svg__arrow_4 "></i>
+                                            </span>
+                                        </a>
+                                        <span class="fn_menu_description">Transform .</span>
+                                    </li>
+                                   {% endfor %}
+                                    {% else %}
+                                   
+                                    
+                                   
+                                    {% endif %}
+                                    
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    

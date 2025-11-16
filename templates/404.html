@@ -1,0 +1,57 @@
+{% extends 'header.html' %}
+{% block body %}
+      {% load static %}
+		
+		<div class="mow_fn_content">          	
+<!-- ERROR PAGE -->
+<div class="mow_fn_404">
+    <div class="container">
+        <div class="message_holder">
+            <div class="title_holder">
+                <span class="icon" aria-label="404 Not Found"><i class="fn__isvg fn__isvg-svg__404 "></i></span>
+                <h3 class="fn__maintitle">Page Not Found</h3><p class="fn__desc">Sorry, but the page you are looking for was moved, removed, renamed, or might never have existed...</p>            </div>
+            <form action="" method="get">
+                <input type="text" name="s" placeholder="Search here..." autocomplete="off" aria-label="Search field">
+                <div class="search">
+                    <input type="submit" class="pe-7s-search" value="Search">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- /ERROR PAGE -->
+
+        
+
+	</div>
+	<!-- Close Page -->
+
+			
+	
+	<!-- Footer -->
+	<!-- Footer -->
+	 {% include 'footer.html' %}
+	<!-- !Footer -->
+
+</div>
+
+
+
+
+<!-- Magic Cursor -->
+<!-- Magic Cursor -->
+
+     <!-- Searchbox -->
+ {% include 'searchbox.html' %}
+        <!-- !Searchbox -->
+
+
+
+        {% include 'left_menu.html' %}
+
+
+      
+       <!-- / Content -->
+
+{% endblock %}
