@@ -1,7 +1,6 @@
 from .models import *
-from django.shortcuts import render, get_object_or_404,get_list_or_404 
+from django.shortcuts import  get_object_or_404 
 import datetime
-from django.http import Http404
 
 
 today = datetime.date.today()
@@ -27,6 +26,7 @@ class Q_db(object):
                 article = Article.objects.get(category__category_slug=category_name, slug=slug_name,status='published')
                 return article
             else:
+                
                 # Render the 'Coming Soon' template
                 context = {
                 'category': get_404,
@@ -40,14 +40,12 @@ class Q_db(object):
             get_404 = get_object_or_404(Category, category_slug=category_name)
             has_content = Article.objects.filter(category__category_slug=category_name, ).exists()
             if has_content:
-                content = Article.objects.filter(category__category_slug=category_name, )
+                content = Article.objects.filter(category__category_slug=category_name,status='published' )
                 return content
-            else:
-                print("not content%%%%%%%%%%%%%%%%%%")
-                
+            else:                
                 return "cooming_soon"
          else:
-             return Article.objects.filter(publish__lte=today).order_by('?')
+             return Article.objects.filter(publish__lte=today, status='published').order_by('-publish' )
          
 class Q_db_filter(object):
 

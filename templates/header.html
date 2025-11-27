@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Baku Times</title>
+        <title>{{ global_settings.title }}</title>
         <meta name='robots' content='max-image-preview:large'/>
         <style>
             img:is([sizes="auto" i], [sizes^="auto," i]) {
@@ -653,7 +653,7 @@
                             <div class="middle_item">
                                 <div class="fn__logo">
                                     <a href="{% url 'polls:home'  %}">
-                                        <img loading="lazy" loading="lazy" decoding="async" width="351" height="46" class="dark_logo" src="{% static  'images/times-black-logo.png' %}" alt="logo">
+                                        <img loading="lazy" loading="lazy" decoding="async" width="351" height="46" class="dark_logo" src="{{global_settings.logo}}" alt="logo">
                                         <img loading="lazy" loading="lazy" decoding="async" width="351" height="46" class="light_logo" src="{% static  'images/logo29a.png' %}" alt="logo">
                                     </a>
                                 </div>

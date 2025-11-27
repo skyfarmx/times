@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Article, Comment
+from .models import Category, Article, Comment,GlobalSettings
 from django import forms
 from ckeditor.widgets import CKEditorWidget
 
@@ -35,5 +35,16 @@ class CommentAdmin(admin.ModelAdmin):
     def approve_comments(self, request, queryset):
         queryset.update(active=True)
     approve_comments.short_description = "Mark selected comments as approved"
+
+
+
+
+@admin.register(GlobalSettings)
+class GlobalAdmin(admin.ModelAdmin):
+    list_display = ['site_name','logo','title']
+    class Meta:
+        model = GlobalSettings
+        fields = '__all__'
+
 
 admin.site.register(Category,CategoryAdmin)

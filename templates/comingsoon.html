@@ -12,28 +12,17 @@
 
 				<div class="fn__header_s">
 					<div class="ht_left_item fn__logo">
-						<a href="" aria-label="Go to homepage"><img loading="lazy" decoding="async" width="351" height="46" class="dark_logo" src="" alt="logo"><img loading="lazy" decoding="async" width="351" height="46" class="light_logo" src="" alt="logo"></a>					</div>
+						<a href="" aria-label="Go to homepage">
+							<img loading="lazy" decoding="async" width="351" height="46" class="dark_logo" src="{{global_settings.logo}}" alt="logo">
+
+							<img loading="lazy" decoding="async" width="351" height="46" class="light_logo" src="{% static  'images/logo29a.png' %}" alt="logo"></a>				
+							</div>
 										<div class="hs_left_item fn__skin">
 						<a href="#" class="light" aria-label="Switch to light mode"><span class="text">Light</span><i class="fn__isvg fn__isvg-svg__sun "></i></a>
 						<a href="#" class="dark" aria-label="Switch to dark mode"><span class="text">Dark</span><i class="fn__isvg fn__isvg-svg__moon "></i></a>
 					</div>
 									</div>
-				<!-- 
-					There is two types of countdown: due_date (Due Date), ever (Evergreen timer)
-						1. 	data-type="due_date"
-							In this case you have to change value of data-date. For example:
-							data-date="October 13, 2022 12:30:00"
-							It will mean that mint will finished at this time
-
-						2. 	data-type="ever"
-							In this case you have to change values of data-days, data-hours, data-minutes and data-seconds. For example:
-							data-days="34"
-							data-hours="10"
-							data-minutes="20"
-							data-seconds="0"
-							It will mean that the time expires after this time, but when the page is refreshed, the value will return again. It means, it won't end.
-					Add boxed class to get #1 type of countdown
-				-->
+				
 				<div class="fn__countdown__boxed" data-type="due_date" data-date="April 17, 2026 00:00:00">
 					<ul>
 						<li class="days">
