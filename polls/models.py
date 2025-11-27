@@ -86,7 +86,7 @@ class Comment(models.Model):
 
 class GlobalSettings(models.Model):
 
-    logo = models.ImageField(upload_to='static/images',blank=True,verbose_name='Logo') 
+    logo = models.ImageField(upload_to='images',blank=True,verbose_name='Logo') 
     site_name = models.CharField(max_length=255, default="Baku Times")
     title = models.CharField(max_length=255, default="Xəbərlər və Məqalələr Saytı")
     contact_email = models.EmailField(blank=True, null=True)
@@ -99,6 +99,7 @@ class GlobalSettings(models.Model):
 
     def save(self, *args, **kwargs):
         self.pk = 1  # enforce singleton
+        
         super().save(*args, **kwargs)
 
     @classmethod
